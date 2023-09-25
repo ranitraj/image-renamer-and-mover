@@ -1,7 +1,7 @@
 # image-renamer-and-mover
 Renames the image based on the expected format &amp; moves them into the desired target folder
 
-## Steps to use:
+## Steps to Modify:
 1. Move the dataset folder into the same project directory in which the script exists. For instance, replace the test directory with the desired directory. Ensure that it remains in the same format as shown below.
 ```
 test/575/575-70-01-0019-01/8/2023-05-24/positive
@@ -21,6 +21,8 @@ target_negative_directory = '/Users/ranitrajganguly/Desktop/thermal_dataset/nega
 python main.py
 ```
 
+Before replacing with your own dataset, make a copy and ensure that the script is working on the uploaded test dataset as expected.
+
 ## Possible Error:
 If the follwing error is encountered while execution:
 ```
@@ -30,4 +32,3 @@ Run the script as Root user using:
 ```
 sudo python main.py
 ```
-
