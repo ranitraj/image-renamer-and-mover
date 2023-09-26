@@ -13,10 +13,12 @@ def rename_image_files(root_dir, final_dir):
     """
     for dir_path, _, filenames in os.walk(root_dir):
         if os.path.basename(dir_path) == final_dir:
-            # Breaking down the directory path into subdirectories
+            # Breaking down the directory path into subdirectories based on OS
             if os.name == 'nt':
+                # Windows
                 all_sub_dirs = os.path.normpath(dir_path).split(os.path.sep)
             else:
+                # Mac/ Linux
                 all_sub_dirs = dir_path.split(os.sep)
 
             # Checking if we have at least 7 subdirectories to form the new name
